@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Palette function generator</title>
+
+  <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+</head>
+
+<body>
+  <h1>Palette function generator</h1>
+  <p>Enter a number at least 3 digits long</p>
+  <input type="number" id="seed" value="578">
+  <button id=goButton>Go!</button>
+  <br>
+  <pre>function getColor(i) {
+  return "#"+((i*<span id=seedSpot>seed</span>)%900+100);
+}</pre>
+  <br>
+  <script src="config.js"></script>
+</body>
+</html>
